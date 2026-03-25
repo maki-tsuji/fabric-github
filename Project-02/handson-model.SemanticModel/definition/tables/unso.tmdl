@@ -1,0 +1,44 @@
+table unso
+	lineageTag: ffd9f4f5-3283-4934-9611-6dd876f840f0
+	sourceLineageTag: [dbo].[unso]
+
+	column 運送コード
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 28c5d456-5cc2-4146-99a1-7008d9305b29
+		sourceLineageTag: 運送コード
+		summarizeBy: none
+		sourceColumn: 運送コード
+
+		annotation SummarizationSetBy = Automatic
+
+	column 運送会社
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d134a85a-560f-4898-914b-288effc0bc5b
+		sourceLineageTag: 運送会社
+		summarizeBy: none
+		sourceColumn: 運送会社
+
+		annotation SummarizationSetBy = Automatic
+
+	column 電話番号
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: cd7700b7-291b-45b7-a771-04ad04baa402
+		sourceLineageTag: 電話番号
+		summarizeBy: none
+		sourceColumn: 電話番号
+
+		annotation SummarizationSetBy = Automatic
+
+	partition unso = entity
+		mode: directLake
+		source
+			entityName: unso
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

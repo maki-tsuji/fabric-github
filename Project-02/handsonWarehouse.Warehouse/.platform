@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Warehouse",
+    "displayName": "handsonWarehouse"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "fb9ea9ee-96d1-9c26-4dda-ca8dee4c8ab1"
+  }
+}

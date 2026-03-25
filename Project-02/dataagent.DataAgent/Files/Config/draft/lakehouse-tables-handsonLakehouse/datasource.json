@@ -1,0 +1,930 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "6767722c-7128-840f-459c-4333bb807f12",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "handsonLakehouse",
+  "type": "lakehouse_tables",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "6a3ec03a-add8-4dd2-a450-96837719df6a",
+      "is_selected": false,
+      "display_name": "dbo",
+      "type": "lakehouse_tables.schema",
+      "description": null,
+      "children": [
+        {
+          "id": "06ffb137-e952-4011-823e-d83db52bcdd0",
+          "is_selected": false,
+          "display_name": "kinmu_sample_japanese_safe",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "bef06dfc-1ba5-457d-be76-30201b5da037",
+              "is_selected": true,
+              "display_name": "社員ID",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6450c4b6-8661-413b-8623-5b16662d84d1",
+              "is_selected": true,
+              "display_name": "名前",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d8ffa9eb-bd2c-467c-8619-eb8e2aaae2ed",
+              "is_selected": true,
+              "display_name": "総労働時間実績",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "dcf86c29-68ef-4d25-ac45-1b8b3dbbe2f0",
+              "is_selected": true,
+              "display_name": "残業時間実績",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "8fc5a6ff-ba75-4113-8fdf-34256efcce99",
+              "is_selected": true,
+              "display_name": "深夜労働時間実績",
+              "type": "lakehouse_tables.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c249f743-1056-49bf-8d5f-960c08a938b6",
+              "is_selected": true,
+              "display_name": "休日労働時間実績",
+              "type": "lakehouse_tables.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6099f1ec-0ad1-48c1-b9a1-0ed9e8359d8a",
+              "is_selected": true,
+              "display_name": "遅刻早退時間実績",
+              "type": "lakehouse_tables.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ae9e152a-81d3-469e-b25d-7aeb1870a1bc",
+              "is_selected": true,
+              "display_name": "欠勤日数実績",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9fd7c601-8334-4d10-872d-7835d36c8a07",
+              "is_selected": true,
+              "display_name": "交通費実績",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "91175223-96fa-44d7-8172-bdcb643bad8e",
+              "is_selected": true,
+              "display_name": "ym",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "ff1498b0-38a1-4831-b989-484e6c141afc",
+          "is_selected": false,
+          "display_name": "unso",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "10c96c78-d41b-49e2-b7eb-aa75d974ee51",
+              "is_selected": true,
+              "display_name": "運送コード",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "60323620-e5a9-4b9f-a73d-30e0af59d0f1",
+              "is_selected": true,
+              "display_name": "運送会社",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "64d45afe-223c-4d0f-b5e3-9f2f19da0ea2",
+              "is_selected": true,
+              "display_name": "電話番号",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "c8d1c310-9f31-478c-a42e-1e37af11e1f5",
+          "is_selected": false,
+          "display_name": "shiiresaki",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "fbea0f81-2a7c-4016-b1ff-2e7709e541d0",
+              "is_selected": true,
+              "display_name": "仕入先コード",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "aa4c10db-3e96-4f1d-85fd-dccc8377d26d",
+              "is_selected": true,
+              "display_name": "フリガナ",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "665a43db-b38b-4d23-8895-550c3e4ed2dc",
+              "is_selected": true,
+              "display_name": "仕入先名",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "8cc737e5-cf5d-46b7-9e2a-560007cd06c8",
+              "is_selected": true,
+              "display_name": "担当者名",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0156487e-a108-4dc8-831d-dd8778762f8d",
+              "is_selected": true,
+              "display_name": "部署",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2988bbb4-5af6-4282-8cc9-a4dac11b1ca4",
+              "is_selected": true,
+              "display_name": "郵便番号",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "33ff4a8d-b6fb-4b49-a8b3-fc8671748ad6",
+              "is_selected": true,
+              "display_name": "トドウフケン",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "eb119859-55e7-4566-91e0-e26bb0d083f7",
+              "is_selected": true,
+              "display_name": "都道府県",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2f09ff0d-4d2e-4a23-a66f-ffe6bf6b7853",
+              "is_selected": true,
+              "display_name": "住所1",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e170dbf9-1c8f-433b-b005-8f21c9ffc9c3",
+              "is_selected": true,
+              "display_name": "住所2",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "662b26f1-f029-47d2-9212-afee16baa1dd",
+              "is_selected": true,
+              "display_name": "電話番号",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "eeb353a9-9c7e-46e2-b351-ba56ec192337",
+              "is_selected": true,
+              "display_name": "ファクシミリ",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ba9842f4-5e08-4d88-bef1-9e90ac991d58",
+              "is_selected": true,
+              "display_name": "ホームページ",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "f258c31b-0da2-43f1-8743-71289b2896ca",
+          "is_selected": false,
+          "display_name": "shain",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "cf4d8957-ae6e-48f1-a6cd-7ed1fa3e6e37",
+              "is_selected": true,
+              "display_name": "社員コード",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "63945a3d-a4c5-4177-a3d4-e5c8a8a1a646",
+              "is_selected": true,
+              "display_name": "フリガナ",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4c7b6969-528a-42ac-8836-949a1625b6f2",
+              "is_selected": true,
+              "display_name": "氏名",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b1a078d2-680d-4241-ae36-dc70f01fea64",
+              "is_selected": true,
+              "display_name": "在籍支社",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2790768d-0f9b-406a-bbb3-3f7bf857f660",
+              "is_selected": true,
+              "display_name": "部署名",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5a8f0825-3fb9-460c-93c3-4cd27bcfeef1",
+              "is_selected": true,
+              "display_name": "誕生日",
+              "type": "lakehouse_tables.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0df940f3-7c0f-4d25-95e9-cbfb9beb417e",
+              "is_selected": true,
+              "display_name": "入社日",
+              "type": "lakehouse_tables.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4058259f-1c05-4dde-8d0d-d3c6fac01427",
+              "is_selected": true,
+              "display_name": "自宅郵便番号",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f5337d8c-e41e-4a92-a34f-26e53ae38e0f",
+              "is_selected": true,
+              "display_name": "自宅都道府県",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cc926d55-a5b5-4c2f-8ec7-dda403bb2066",
+              "is_selected": true,
+              "display_name": "自宅住所1",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "4c349f8d-a465-463c-8c3d-f3c42c0febd1",
+              "is_selected": true,
+              "display_name": "自宅住所2",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "923c57e4-b411-4813-b339-c5aac575d2fb",
+              "is_selected": true,
+              "display_name": "自宅電話番号",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "c421fcad-2d0a-4e4f-84e0-de6e7c0b6c88",
+              "is_selected": true,
+              "display_name": "内線",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d71dc4bb-3b98-4ca8-be2d-013463227fee",
+              "is_selected": true,
+              "display_name": "写真",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b2ca9a87-47d1-40ea-aceb-6c6745d62455",
+              "is_selected": true,
+              "display_name": "プロフィール",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "60a6cfc4-1933-41aa-ad8f-099e2e5499e0",
+          "is_selected": false,
+          "display_name": "juchu",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "da06b977-bbcd-4a70-91d2-e986e2491721",
+              "is_selected": true,
+              "display_name": "受注コード",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9a30a53a-3496-45da-97df-4715c44ab35f",
+              "is_selected": true,
+              "display_name": "得意先コード",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "1589ae1d-db77-40f5-8f00-27b928dec7c1",
+              "is_selected": true,
+              "display_name": "社員コード",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f09aaccb-b60b-408a-84a6-d6bb3933d99b",
+              "is_selected": true,
+              "display_name": "出荷先名",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f010cf67-7b5e-4aec-8ecd-d9c0e9456508",
+              "is_selected": true,
+              "display_name": "出荷先郵便番号",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "46af0453-a3a1-4a2e-a0e7-41dc192cfd51",
+              "is_selected": true,
+              "display_name": "出荷先都道府県",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "838128a9-ec85-4fe3-a307-6ea4a21b5488",
+              "is_selected": true,
+              "display_name": "出荷先住所1",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "8c1f3c73-a339-4952-9cfa-30bd913882d4",
+              "is_selected": true,
+              "display_name": "出荷先住所2",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5e9aa512-3771-4493-9a63-8718a86eab35",
+              "is_selected": true,
+              "display_name": "運送区分",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "34a5ef35-203a-4a04-ba9a-4a2b1305b561",
+              "is_selected": true,
+              "display_name": "受注日",
+              "type": "lakehouse_tables.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cc091f1a-fa68-4973-84f1-5eade69c53ff",
+              "is_selected": true,
+              "display_name": "締切日",
+              "type": "lakehouse_tables.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a97449c1-da80-4e03-b0aa-9a012464adad",
+              "is_selected": true,
+              "display_name": "出荷日",
+              "type": "lakehouse_tables.column",
+              "data_type": "datetime2",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9528cb91-aba2-480c-b458-45f84bfed871",
+              "is_selected": true,
+              "display_name": "運送料",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "18a0fd76-d1a9-4ad4-a05f-be7ccbe4c517",
+          "is_selected": false,
+          "display_name": "juchumeisai",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "91b40ad4-15e7-4029-b438-5f5e88552c27",
+              "is_selected": true,
+              "display_name": "受注コード",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "a1db4ff6-baae-4ccc-aaf0-a3f1873e8ca5",
+              "is_selected": true,
+              "display_name": "商品コード",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ae908778-24b3-437e-93ea-0bbbe9d9f6f6",
+              "is_selected": true,
+              "display_name": "単価",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "e2d129e9-3d1b-4a29-a6f6-492a32aa9dfa",
+              "is_selected": true,
+              "display_name": "数量",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b228a7a3-423f-4581-8d92-0afd368a754d",
+              "is_selected": true,
+              "display_name": "割引",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "50ede094-21cb-4bcb-b370-41d1d811e8b7",
+          "is_selected": false,
+          "display_name": "shohin",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "6a5b695f-8cf0-4e63-bf46-139f2a649528",
+              "is_selected": true,
+              "display_name": "商品コード",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d8578e03-5c15-4409-9c13-17557296831a",
+              "is_selected": true,
+              "display_name": "フリガナ",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2567a1f5-0295-415f-a1e4-ae3d25b1021b",
+              "is_selected": true,
+              "display_name": "商品名",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0281b022-d3d4-4e05-a32b-d00e1cfa9bfd",
+              "is_selected": true,
+              "display_name": "仕入先コード",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "3a72eee9-9804-4079-bdd8-c9fb28b54c62",
+              "is_selected": true,
+              "display_name": "区分コード",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "6cc6e16e-c7aa-4bff-9757-0b738fea5c15",
+              "is_selected": true,
+              "display_name": "梱包単位",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cb9823b9-25b9-4a68-a6be-3a3e88497998",
+              "is_selected": true,
+              "display_name": "単価",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "7dcd0bc4-486c-4260-b7be-818388a3d36c",
+              "is_selected": true,
+              "display_name": "在庫",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "daa95c9d-a150-4325-8db4-21f0a53cb7fb",
+              "is_selected": true,
+              "display_name": "発注済",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "87e79ab7-b9ed-418e-a1ad-bcfd916f6bfd",
+              "is_selected": true,
+              "display_name": "発注点",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ae415547-220f-4335-8205-efd8542fc929",
+              "is_selected": true,
+              "display_name": "生産中止",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "b9d2495d-bbd8-4125-baca-39483d224832",
+          "is_selected": false,
+          "display_name": "shohinkubun",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "657a50d7-8037-4def-a4dd-8600ff93b581",
+              "is_selected": true,
+              "display_name": "区分コード",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9923e007-b313-4cdf-a58d-ed0b19a31ff9",
+              "is_selected": true,
+              "display_name": "区分名",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0ab1526b-29d5-4ec0-b2b1-6bc6d9429514",
+              "is_selected": true,
+              "display_name": "説明",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "9aa639fb-3c27-42fa-93c8-aea6d4b065b4",
+              "is_selected": true,
+              "display_name": "図",
+              "type": "lakehouse_tables.column",
+              "data_type": "float",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "f7058fed-1866-4c1e-90ff-5e96c3d06622",
+          "is_selected": false,
+          "display_name": "todofuken",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "e03bd5ff-d2e0-44b9-99ac-6b23c4578467",
+              "is_selected": true,
+              "display_name": "トドウフケン",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "5a5dc742-cb6d-4731-a39e-b73ddc953a56",
+              "is_selected": true,
+              "display_name": "都道府県",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "ac9cdfdd-4a81-468e-a3b1-358d2b00e9a4",
+              "is_selected": true,
+              "display_name": "ローマ字",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "048a9cc6-384c-4f6f-be80-ed8141b36176",
+              "is_selected": true,
+              "display_name": "地域名ローマ字",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "04ee7ce9-3b6c-4b7b-9629-af6b5e008624",
+              "is_selected": true,
+              "display_name": "地域",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "a306a6c1-8cb4-4c92-8a40-bea7bb278bc0",
+          "is_selected": false,
+          "display_name": "tokuisaki",
+          "type": "lakehouse_tables.table",
+          "description": null,
+          "children": [
+            {
+              "id": "4c525bac-2ba3-4cbb-afa7-4deaaff62c06",
+              "is_selected": true,
+              "display_name": "得意先コード",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "0739a864-a359-413e-991b-b0de650f1a7a",
+              "is_selected": true,
+              "display_name": "フリガナ",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2199dcdd-c228-4aba-ad56-0361cfaa0abd",
+              "is_selected": true,
+              "display_name": "得意先名",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "d2d4d60d-58b7-4787-9a11-a953ab609326",
+              "is_selected": true,
+              "display_name": "担当者名",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "562ec262-eafb-4235-b43a-1d9bbbb80c4c",
+              "is_selected": true,
+              "display_name": "部署",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "cd5fb4c1-2884-4563-bb52-937e956c6fca",
+              "is_selected": true,
+              "display_name": "郵便番号",
+              "type": "lakehouse_tables.column",
+              "data_type": "int",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2b506325-3654-4bb4-938a-328fdb955bab",
+              "is_selected": true,
+              "display_name": "トドウフケン",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "b85e77f5-d58d-459a-887e-ab436eeb76b6",
+              "is_selected": true,
+              "display_name": "都道府県",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "622feb90-4c63-4e36-a46b-6fa71cacbf55",
+              "is_selected": true,
+              "display_name": "住所1",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "27615987-ebde-4521-b894-320b523aa7b5",
+              "is_selected": true,
+              "display_name": "住所2",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "2a64ee24-ea5c-4807-9bbb-e6151c7a9f74",
+              "is_selected": true,
+              "display_name": "電話番号",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            },
+            {
+              "id": "f2b051d1-f555-40dc-9a4a-844f65116928",
+              "is_selected": true,
+              "display_name": "ファクシミリ",
+              "type": "lakehouse_tables.column",
+              "data_type": "varchar",
+              "description": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

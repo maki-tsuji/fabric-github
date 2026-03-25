@@ -1,0 +1,56 @@
+table shohinkubun
+	lineageTag: 00a7d802-a929-4df1-bc90-3c90707f6bc1
+	sourceLineageTag: [dbo].[shohinkubun]
+
+	column 区分コード
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 83304250-08a8-4b09-a2d3-b7b7f36c5f94
+		sourceLineageTag: 区分コード
+		summarizeBy: none
+		sourceColumn: 区分コード
+
+		annotation SummarizationSetBy = Automatic
+
+	column 区分名
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9192e9a5-82fb-4dce-adb4-7045666fec5f
+		sourceLineageTag: 区分名
+		summarizeBy: none
+		sourceColumn: 区分名
+
+		annotation SummarizationSetBy = Automatic
+
+	column 説明
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: aca0d367-ae55-42b6-8a91-13ad7236f54e
+		sourceLineageTag: 説明
+		summarizeBy: none
+		sourceColumn: 説明
+
+		annotation SummarizationSetBy = Automatic
+
+	column 図
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 06c38cb6-d046-4db5-8124-17c10ef5af87
+		sourceLineageTag: 図
+		summarizeBy: none
+		sourceColumn: 図
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition shohinkubun = entity
+		mode: directLake
+		source
+			entityName: shohinkubun
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

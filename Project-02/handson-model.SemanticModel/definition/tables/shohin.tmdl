@@ -1,0 +1,132 @@
+table shohin
+	lineageTag: 67133f73-342e-4243-9389-f916fe0d9eaa
+	sourceLineageTag: [dbo].[shohin]
+
+	column 商品コード
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ae693fb6-bda0-4c84-ae8d-0fc6aea20fe7
+		sourceLineageTag: 商品コード
+		summarizeBy: none
+		sourceColumn: 商品コード
+
+		annotation SummarizationSetBy = Automatic
+
+	column フリガナ
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f3b0837b-707b-4098-bfb7-0ec21a0b78f9
+		sourceLineageTag: フリガナ
+		summarizeBy: none
+		sourceColumn: フリガナ
+
+		annotation SummarizationSetBy = Automatic
+
+	column 商品名
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5c970fce-9d95-472d-8981-88b58aa16a53
+		sourceLineageTag: 商品名
+		summarizeBy: none
+		sourceColumn: 商品名
+
+		annotation SummarizationSetBy = Automatic
+
+	column 仕入先コード
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: b564065e-450e-475f-a43b-4a54fb8d98ff
+		sourceLineageTag: 仕入先コード
+		summarizeBy: none
+		sourceColumn: 仕入先コード
+
+		annotation SummarizationSetBy = Automatic
+
+	column 区分コード
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: b138f4ec-3fca-4635-b76b-e45747947124
+		sourceLineageTag: 区分コード
+		summarizeBy: none
+		sourceColumn: 区分コード
+
+		annotation SummarizationSetBy = Automatic
+
+	column 梱包単位
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9db4b07a-a4f5-454c-a255-0ac934622e74
+		sourceLineageTag: 梱包単位
+		summarizeBy: none
+		sourceColumn: 梱包単位
+
+		annotation SummarizationSetBy = Automatic
+
+	column 単価
+		dataType: double
+		sourceProviderType: float
+		lineageTag: e8187f60-7a30-4579-ac7b-2058207a5f43
+		sourceLineageTag: 単価
+		summarizeBy: sum
+		sourceColumn: 単価
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 在庫
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 38fe7452-311f-40c2-8d2d-6bf87e9695b5
+		sourceLineageTag: 在庫
+		summarizeBy: sum
+		sourceColumn: 在庫
+
+		annotation SummarizationSetBy = Automatic
+
+	column 発注済
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: bf6e693d-ee6d-482b-acd0-93eeb2424ed3
+		sourceLineageTag: 発注済
+		summarizeBy: sum
+		sourceColumn: 発注済
+
+		annotation SummarizationSetBy = Automatic
+
+	column 発注点
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 778f2c69-91ea-49f7-a548-33659b249732
+		sourceLineageTag: 発注点
+		summarizeBy: sum
+		sourceColumn: 発注点
+
+		annotation SummarizationSetBy = Automatic
+
+	column 生産中止
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: afd72b1f-457b-4af3-bdf2-10082afd18d2
+		sourceLineageTag: 生産中止
+		summarizeBy: sum
+		sourceColumn: 生産中止
+
+		annotation SummarizationSetBy = Automatic
+
+	partition shohin = entity
+		mode: directLake
+		source
+			entityName: shohin
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

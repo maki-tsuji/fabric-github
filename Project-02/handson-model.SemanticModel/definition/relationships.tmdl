@@ -1,0 +1,32 @@
+relationship ffd0c1ca-8b9b-b514-cf37-9ecf26a087ee
+	fromColumn: juchumeisai.受注コード
+	toColumn: juchu.受注コード
+
+relationship 3e0d8d00-7e51-f41c-8872-4a433485e793
+	fromColumn: juchu.社員コード
+	toColumn: shain.社員コード
+
+relationship e3f80859-c1c4-ddd0-087c-7960a71b2be7
+	fromColumn: juchu.得意先コード
+	toColumn: tokuisaki.得意先コード
+
+relationship 3bd3a0fe-9b93-c468-ba17-eea922908cce
+	fromColumn: juchumeisai.商品コード
+	toColumn: shohin.商品コード
+
+relationship 44cf4917-f467-3db6-4d6f-c1cadcb1b8c0
+	fromColumn: shohin.仕入先コード
+	toColumn: shiiresaki.仕入先コード
+
+relationship 9b69765d-053f-3b74-a603-aa82d015c6c5
+	fromColumn: shohin.区分コード
+	toColumn: shohinkubun.区分コード
+
+relationship 3f5b7c21-a3e3-15d3-3282-1f9aa89baaff
+	fromColumn: tokuisaki.トドウフケン
+	toColumn: todofuken.トドウフケン
+
+relationship 46bd04f7-fdd9-cdfb-ad45-807977958e2d
+	fromColumn: juchu.運送区分
+	toColumn: unso.運送コード
+

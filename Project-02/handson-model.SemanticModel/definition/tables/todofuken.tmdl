@@ -1,0 +1,63 @@
+table todofuken
+	lineageTag: 3c440dc9-53dc-47b1-9268-4cdebd8fa1b4
+	sourceLineageTag: [dbo].[todofuken]
+
+	column トドウフケン
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 794a3826-ffd2-4925-b4ab-01eafd6993af
+		sourceLineageTag: トドウフケン
+		summarizeBy: none
+		sourceColumn: トドウフケン
+
+		annotation SummarizationSetBy = Automatic
+
+	column 都道府県
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 929ba4bc-5302-4ce8-8402-ecedd7b024ff
+		sourceLineageTag: 都道府県
+		summarizeBy: none
+		sourceColumn: 都道府県
+
+		annotation SummarizationSetBy = Automatic
+
+	column ローマ字
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 73ba3f5b-26dd-4cbb-b288-84fe08584525
+		sourceLineageTag: ローマ字
+		summarizeBy: none
+		sourceColumn: ローマ字
+
+		annotation SummarizationSetBy = Automatic
+
+	column 地域名ローマ字
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 96ab7a68-79a3-4790-b947-3191c2b301f1
+		sourceLineageTag: 地域名ローマ字
+		summarizeBy: none
+		sourceColumn: 地域名ローマ字
+
+		annotation SummarizationSetBy = Automatic
+
+	column 地域
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 97e27a50-a294-4c4d-b100-88e7edb9864a
+		sourceLineageTag: 地域
+		summarizeBy: none
+		sourceColumn: 地域
+
+		annotation SummarizationSetBy = Automatic
+
+	partition todofuken = entity
+		mode: directLake
+		source
+			entityName: todofuken
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,831 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "6a799281-1682-8d99-4c5a-8287bf69cdf8",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "handson-model",
+  "type": "semantic_model",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "398e7f12-fa7d-4696-873a-915119134f53",
+      "is_selected": true,
+      "display_name": "juchu",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "ac1559c4-be99-4b2b-b54a-b15483bfeb3c",
+          "is_selected": true,
+          "display_name": "運送区分",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d8166237-e4ca-4abe-9f4c-8da9db56d337",
+          "is_selected": true,
+          "display_name": "運送料",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "372abf92-2ac1-4da8-9511-ae603223c246",
+          "is_selected": true,
+          "display_name": "社員コード",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a64f52b9-8629-458e-a87e-1758c38f74e7",
+          "is_selected": true,
+          "display_name": "受注コード",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d162b06f-50df-4659-9e43-9d0856a91811",
+          "is_selected": true,
+          "display_name": "受注日",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "179894f3-452a-4561-aa62-88ed2d4f378c",
+          "is_selected": true,
+          "display_name": "出荷先住所1",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0aa3daad-ea1c-46b4-8668-275a5a673ea8",
+          "is_selected": true,
+          "display_name": "出荷先住所2",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a0716941-a33a-4b93-8504-4bf4cff3c56f",
+          "is_selected": true,
+          "display_name": "出荷先都道府県",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b7968e5f-3a32-45db-b182-c65747000a11",
+          "is_selected": true,
+          "display_name": "出荷先名",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "08067ef0-f48d-45da-a9cc-903a7a121b8b",
+          "is_selected": true,
+          "display_name": "出荷先郵便番号",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "460d8353-49e3-417b-9788-1c9845d31025",
+          "is_selected": true,
+          "display_name": "出荷日",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d5862ce2-90fa-4e84-9492-f7975d26c066",
+          "is_selected": true,
+          "display_name": "締切日",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "20abeb12-99d0-4ec1-8c7d-bef990159e9f",
+          "is_selected": true,
+          "display_name": "得意先コード",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "54e932ca-fa96-4839-b133-9edeed3cd9bb",
+      "is_selected": false,
+      "display_name": "juchumeisai",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "ff0e236c-5526-4a2f-a008-3b92324b9362",
+          "is_selected": true,
+          "display_name": "割引",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e857fedb-482b-454b-8d2e-f24b6f066cc1",
+          "is_selected": true,
+          "display_name": "受注コード",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "76ff95f5-851f-4516-a5d8-35560ad5d6cd",
+          "is_selected": true,
+          "display_name": "商品コード",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "44ec2cf1-f3e1-4a48-b5e0-237940ff5298",
+          "is_selected": true,
+          "display_name": "数量",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "52a4936b-d43a-4d14-b595-5ce205a7c40c",
+          "is_selected": true,
+          "display_name": "単価",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "8e2edcc5-f58f-41a7-b327-ae67afc30af6",
+          "is_selected": true,
+          "display_name": "売上",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "2e44fe80-d74a-43af-9b5b-0758658e679b",
+      "is_selected": false,
+      "display_name": "shain",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "8aa179e7-5d4e-44ef-ade2-db13c5db8b1b",
+          "is_selected": true,
+          "display_name": "フリガナ",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ee546668-fc07-45c1-9a55-47802d70a678",
+          "is_selected": true,
+          "display_name": "プロフィール",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a3452be5-dc7e-49e2-9971-9f07400d9daa",
+          "is_selected": true,
+          "display_name": "在籍支社",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e37bdf47-3190-4aaf-8811-40179cf164b1",
+          "is_selected": true,
+          "display_name": "氏名",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "119884da-3dfb-44e7-a603-cc38688e16f3",
+          "is_selected": true,
+          "display_name": "自宅住所1",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9291a3ef-7dce-4ee5-bcac-44a4f9fd8192",
+          "is_selected": true,
+          "display_name": "自宅住所2",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0c3671d3-ea83-44a3-9af9-b3786cad344a",
+          "is_selected": true,
+          "display_name": "自宅電話番号",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9ced916b-f5ee-4be2-b253-8727e2013fc2",
+          "is_selected": true,
+          "display_name": "自宅都道府県",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fa568027-769a-4148-b3c3-eb89a36001a2",
+          "is_selected": true,
+          "display_name": "自宅郵便番号",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c565b9bd-a31b-44f2-b6e7-551ef454a913",
+          "is_selected": true,
+          "display_name": "写真",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0764a84a-0799-4433-ae64-c6c5c0970e25",
+          "is_selected": true,
+          "display_name": "社員コード",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e566ba87-afe5-4e09-8486-55b94c120e42",
+          "is_selected": true,
+          "display_name": "誕生日",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2bb336b9-d959-4aff-a9e5-a3105269596b",
+          "is_selected": true,
+          "display_name": "内線",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "8703ebf0-e939-4f36-a85f-02c117ab393d",
+          "is_selected": true,
+          "display_name": "入社日",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "50948f60-6cef-44f3-b4a4-1a43094c0b39",
+          "is_selected": true,
+          "display_name": "部署名",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "ba4aa123-ae60-4a22-9c9f-6962e7cf3b2a",
+      "is_selected": false,
+      "display_name": "shiiresaki",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "ac8f7c5f-2802-44aa-b369-f3aa2db27039",
+          "is_selected": true,
+          "display_name": "トドウフケン",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fb1b9337-449c-4704-85bf-2e9a01a87766",
+          "is_selected": true,
+          "display_name": "ファクシミリ",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "43e75c97-3b6d-4e30-aceb-2b114c9e30d1",
+          "is_selected": true,
+          "display_name": "フリガナ",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "50ded30d-e2f4-4424-8328-30318931dda9",
+          "is_selected": true,
+          "display_name": "ホームページ",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "206992eb-966c-4bc5-95d0-6deb84ee726f",
+          "is_selected": true,
+          "display_name": "仕入先コード",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "55ed5f92-e878-4e61-bc2a-e343c0b54511",
+          "is_selected": true,
+          "display_name": "仕入先名",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "781cdafe-f5e6-4c2d-bde8-cd5f9b2d1be7",
+          "is_selected": true,
+          "display_name": "住所1",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2761aa49-f97c-4801-a86c-3ef916b02e52",
+          "is_selected": true,
+          "display_name": "住所2",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "09f821ae-3c1a-4d23-9e1f-16d9c1a85a1a",
+          "is_selected": true,
+          "display_name": "担当者名",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "3d128809-7004-44d5-8076-95876a9d3c18",
+          "is_selected": true,
+          "display_name": "電話番号",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e9cb0b6c-cc56-46fa-917a-141ccbfd9bf7",
+          "is_selected": true,
+          "display_name": "都道府県",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9a3345d5-11b4-4576-934b-2fc6045d968b",
+          "is_selected": true,
+          "display_name": "部署",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5f69e933-aa5a-4478-b27c-2b8aa5970c64",
+          "is_selected": true,
+          "display_name": "郵便番号",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "67133f73-342e-4243-9389-f916fe0d9eaa",
+      "is_selected": false,
+      "display_name": "shohin",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "f3b0837b-707b-4098-bfb7-0ec21a0b78f9",
+          "is_selected": true,
+          "display_name": "フリガナ",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b138f4ec-3fca-4635-b76b-e45747947124",
+          "is_selected": true,
+          "display_name": "区分コード",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9db4b07a-a4f5-454c-a255-0ac934622e74",
+          "is_selected": true,
+          "display_name": "梱包単位",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "38fe7452-311f-40c2-8d2d-6bf87e9695b5",
+          "is_selected": true,
+          "display_name": "在庫",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "b564065e-450e-475f-a43b-4a54fb8d98ff",
+          "is_selected": true,
+          "display_name": "仕入先コード",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ae693fb6-bda0-4c84-ae8d-0fc6aea20fe7",
+          "is_selected": true,
+          "display_name": "商品コード",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "5c970fce-9d95-472d-8981-88b58aa16a53",
+          "is_selected": true,
+          "display_name": "商品名",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "afd72b1f-457b-4af3-bdf2-10082afd18d2",
+          "is_selected": true,
+          "display_name": "生産中止",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e8187f60-7a30-4579-ac7b-2058207a5f43",
+          "is_selected": true,
+          "display_name": "単価",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "bf6e693d-ee6d-482b-acd0-93eeb2424ed3",
+          "is_selected": true,
+          "display_name": "発注済",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "778f2c69-91ea-49f7-a548-33659b249732",
+          "is_selected": true,
+          "display_name": "発注点",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "00a7d802-a929-4df1-bc90-3c90707f6bc1",
+      "is_selected": false,
+      "display_name": "shohinkubun",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "83304250-08a8-4b09-a2d3-b7b7f36c5f94",
+          "is_selected": true,
+          "display_name": "区分コード",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9192e9a5-82fb-4dce-adb4-7045666fec5f",
+          "is_selected": true,
+          "display_name": "区分名",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "06c38cb6-d046-4db5-8124-17c10ef5af87",
+          "is_selected": true,
+          "display_name": "図",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "aca0d367-ae55-42b6-8a91-13ad7236f54e",
+          "is_selected": true,
+          "display_name": "説明",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "3c440dc9-53dc-47b1-9268-4cdebd8fa1b4",
+      "is_selected": false,
+      "display_name": "todofuken",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "794a3826-ffd2-4925-b4ab-01eafd6993af",
+          "is_selected": true,
+          "display_name": "トドウフケン",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "73ba3f5b-26dd-4cbb-b288-84fe08584525",
+          "is_selected": true,
+          "display_name": "ローマ字",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "97e27a50-a294-4c4d-b100-88e7edb9864a",
+          "is_selected": true,
+          "display_name": "地域",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "96ab7a68-79a3-4790-b947-3191c2b301f1",
+          "is_selected": true,
+          "display_name": "地域名ローマ字",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "929ba4bc-5302-4ce8-8402-ecedd7b024ff",
+          "is_selected": true,
+          "display_name": "都道府県",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "4f60a142-cb7f-492b-ad35-07f8fe642135",
+      "is_selected": false,
+      "display_name": "tokuisaki",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "38c02c85-1812-4fc6-9ac6-2ecf14dddea1",
+          "is_selected": true,
+          "display_name": "トドウフケン",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0f235045-8a1a-40e7-be37-cd7d4c6a369d",
+          "is_selected": true,
+          "display_name": "ファクシミリ",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0cf7513a-766d-42e0-81eb-dba29c8e04e6",
+          "is_selected": true,
+          "display_name": "フリガナ",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "1db39fe2-44bc-4897-989c-b62603579ee1",
+          "is_selected": true,
+          "display_name": "住所1",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a66d43ac-56ff-4bba-8acc-d8a3b14f4060",
+          "is_selected": true,
+          "display_name": "住所2",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "6ac75ee5-0f20-432e-83d2-72d42b9c9b50",
+          "is_selected": true,
+          "display_name": "担当者名",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ded0de59-5a17-40b2-ae6d-f85f29f09ee4",
+          "is_selected": true,
+          "display_name": "電話番号",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2f1c91e0-0e6a-4e5c-81b7-248718cb3630",
+          "is_selected": true,
+          "display_name": "都道府県",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e031a0dd-426d-4500-9fef-02aadbe6fa47",
+          "is_selected": true,
+          "display_name": "得意先コード",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a4513b05-b19f-4831-a167-1d642b48306b",
+          "is_selected": true,
+          "display_name": "得意先名",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "8594a6a5-3559-41d8-b436-e5e7dc2ffaff",
+          "is_selected": true,
+          "display_name": "部署",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "9e6f8e37-683f-4822-b984-c3698a91863f",
+          "is_selected": true,
+          "display_name": "郵便番号",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "ffd9f4f5-3283-4934-9611-6dd876f840f0",
+      "is_selected": false,
+      "display_name": "unso",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "28c5d456-5cc2-4146-99a1-7008d9305b29",
+          "is_selected": true,
+          "display_name": "運送コード",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d134a85a-560f-4898-914b-288effc0bc5b",
+          "is_selected": true,
+          "display_name": "運送会社",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "cd7700b7-291b-45b7-a771-04ad04baa402",
+          "is_selected": true,
+          "display_name": "電話番号",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

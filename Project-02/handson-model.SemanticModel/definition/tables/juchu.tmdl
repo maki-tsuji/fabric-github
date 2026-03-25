@@ -1,0 +1,156 @@
+table juchu
+	lineageTag: 398e7f12-fa7d-4696-873a-915119134f53
+	sourceLineageTag: [dbo].[juchu]
+
+	column 受注コード
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: a64f52b9-8629-458e-a87e-1758c38f74e7
+		sourceLineageTag: 受注コード
+		summarizeBy: none
+		sourceColumn: 受注コード
+
+		annotation SummarizationSetBy = Automatic
+
+	column 得意先コード
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 20abeb12-99d0-4ec1-8c7d-bef990159e9f
+		sourceLineageTag: 得意先コード
+		summarizeBy: none
+		sourceColumn: 得意先コード
+
+		annotation SummarizationSetBy = Automatic
+
+	column 社員コード
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 372abf92-2ac1-4da8-9511-ae603223c246
+		sourceLineageTag: 社員コード
+		summarizeBy: none
+		sourceColumn: 社員コード
+
+		annotation SummarizationSetBy = Automatic
+
+	column 出荷先名
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b7968e5f-3a32-45db-b182-c65747000a11
+		sourceLineageTag: 出荷先名
+		summarizeBy: none
+		sourceColumn: 出荷先名
+
+		annotation SummarizationSetBy = Automatic
+
+	column 出荷先郵便番号
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 08067ef0-f48d-45da-a9cc-903a7a121b8b
+		sourceLineageTag: 出荷先郵便番号
+		summarizeBy: sum
+		sourceColumn: 出荷先郵便番号
+
+		annotation SummarizationSetBy = Automatic
+
+	column 出荷先都道府県
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a0716941-a33a-4b93-8504-4bf4cff3c56f
+		sourceLineageTag: 出荷先都道府県
+		summarizeBy: none
+		sourceColumn: 出荷先都道府県
+
+		annotation SummarizationSetBy = Automatic
+
+	column 出荷先住所1
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 179894f3-452a-4561-aa62-88ed2d4f378c
+		sourceLineageTag: 出荷先住所1
+		summarizeBy: none
+		sourceColumn: 出荷先住所1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 出荷先住所2
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0aa3daad-ea1c-46b4-8668-275a5a673ea8
+		sourceLineageTag: 出荷先住所2
+		summarizeBy: none
+		sourceColumn: 出荷先住所2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 運送区分
+		dataType: int64
+		sourceProviderType: float
+		lineageTag: ac1559c4-be99-4b2b-b54a-b15483bfeb3c
+		sourceLineageTag: 運送区分
+		summarizeBy: none
+		sourceColumn: 運送区分
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 受注日
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: d162b06f-50df-4659-9e43-9d0856a91811
+		sourceLineageTag: 受注日
+		summarizeBy: none
+		sourceColumn: 受注日
+
+		annotation SummarizationSetBy = Automatic
+
+	column 締切日
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: d5862ce2-90fa-4e84-9492-f7975d26c066
+		sourceLineageTag: 締切日
+		summarizeBy: none
+		sourceColumn: 締切日
+
+		annotation SummarizationSetBy = Automatic
+
+	column 出荷日
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 460d8353-49e3-417b-9788-1c9845d31025
+		sourceLineageTag: 出荷日
+		summarizeBy: none
+		sourceColumn: 出荷日
+
+		annotation SummarizationSetBy = Automatic
+
+	column 運送料
+		dataType: double
+		sourceProviderType: float
+		lineageTag: d8166237-e4ca-4abe-9f4c-8da9db56d337
+		sourceLineageTag: 運送料
+		summarizeBy: sum
+		sourceColumn: 運送料
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition juchu = entity
+		mode: directLake
+		source
+			entityName: juchu
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

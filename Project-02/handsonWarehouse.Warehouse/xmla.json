@@ -1,0 +1,1454 @@
+{
+  "name": "{{Dataset_Name}}",
+  "compatibilityLevel": 1604,
+  "model": {
+    "name": "{{Dataset_Name}}",
+    "culture": "en-US",
+    "collation": "Latin1_General_100_BIN2_UTF8",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "juchu",
+        "sourceLineageTag": "[dbo].[juchu]",
+        "columns": [
+          {
+            "name": "受注コード",
+            "dataType": "int64",
+            "sourceColumn": "受注コード",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "受注コード",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "得意先コード",
+            "dataType": "int64",
+            "sourceColumn": "得意先コード",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "得意先コード",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "社員コード",
+            "dataType": "int64",
+            "sourceColumn": "社員コード",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "社員コード",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "出荷先名",
+            "dataType": "string",
+            "sourceColumn": "出荷先名",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "出荷先名",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "出荷先郵便番号",
+            "dataType": "int64",
+            "sourceColumn": "出荷先郵便番号",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "出荷先郵便番号",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "出荷先都道府県",
+            "dataType": "string",
+            "sourceColumn": "出荷先都道府県",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "出荷先都道府県",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "出荷先住所1",
+            "dataType": "string",
+            "sourceColumn": "出荷先住所1",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "出荷先住所1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "出荷先住所2",
+            "dataType": "string",
+            "sourceColumn": "出荷先住所2",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "出荷先住所2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "運送区分",
+            "dataType": "double",
+            "sourceColumn": "運送区分",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "運送区分",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "受注日",
+            "dataType": "dateTime",
+            "sourceColumn": "受注日",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "sourceLineageTag": "受注日",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "締切日",
+            "dataType": "dateTime",
+            "sourceColumn": "締切日",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "sourceLineageTag": "締切日",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "出荷日",
+            "dataType": "dateTime",
+            "sourceColumn": "出荷日",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "sourceLineageTag": "出荷日",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "運送料",
+            "dataType": "double",
+            "sourceColumn": "運送料",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "運送料",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "juchu",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "juchumeisai",
+        "sourceLineageTag": "[dbo].[juchumeisai]",
+        "columns": [
+          {
+            "name": "受注コード",
+            "dataType": "int64",
+            "sourceColumn": "受注コード",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "受注コード",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "商品コード",
+            "dataType": "int64",
+            "sourceColumn": "商品コード",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "商品コード",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "単価",
+            "dataType": "double",
+            "sourceColumn": "単価",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "単価",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "数量",
+            "dataType": "int64",
+            "sourceColumn": "数量",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "数量",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "割引",
+            "dataType": "double",
+            "sourceColumn": "割引",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "割引",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "売上",
+            "dataType": "double",
+            "sourceColumn": "売上",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "売上",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "juchumeisai",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "shain",
+        "sourceLineageTag": "[dbo].[shain]",
+        "columns": [
+          {
+            "name": "社員コード",
+            "dataType": "int64",
+            "sourceColumn": "社員コード",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "社員コード",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "フリガナ",
+            "dataType": "string",
+            "sourceColumn": "フリガナ",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "フリガナ",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "氏名",
+            "dataType": "string",
+            "sourceColumn": "氏名",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "氏名",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "在籍支社",
+            "dataType": "string",
+            "sourceColumn": "在籍支社",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "在籍支社",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "部署名",
+            "dataType": "string",
+            "sourceColumn": "部署名",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "部署名",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "誕生日",
+            "dataType": "dateTime",
+            "sourceColumn": "誕生日",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "sourceLineageTag": "誕生日",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "入社日",
+            "dataType": "dateTime",
+            "sourceColumn": "入社日",
+            "formatString": "General Date",
+            "sourceProviderType": "datetime2",
+            "sourceLineageTag": "入社日",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "自宅郵便番号",
+            "dataType": "int64",
+            "sourceColumn": "自宅郵便番号",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "自宅郵便番号",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "自宅都道府県",
+            "dataType": "string",
+            "sourceColumn": "自宅都道府県",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "自宅都道府県",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "自宅住所1",
+            "dataType": "string",
+            "sourceColumn": "自宅住所1",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "自宅住所1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "自宅住所2",
+            "dataType": "string",
+            "sourceColumn": "自宅住所2",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "自宅住所2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "自宅電話番号",
+            "dataType": "string",
+            "sourceColumn": "自宅電話番号",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "自宅電話番号",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "内線",
+            "dataType": "int64",
+            "sourceColumn": "内線",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "内線",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "写真",
+            "dataType": "string",
+            "sourceColumn": "写真",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "写真",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "プロフィール",
+            "dataType": "string",
+            "sourceColumn": "プロフィール",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "プロフィール",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "shain",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "shiiresaki",
+        "sourceLineageTag": "[dbo].[shiiresaki]",
+        "columns": [
+          {
+            "name": "仕入先コード",
+            "dataType": "int64",
+            "sourceColumn": "仕入先コード",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "仕入先コード",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "フリガナ",
+            "dataType": "string",
+            "sourceColumn": "フリガナ",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "フリガナ",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "仕入先名",
+            "dataType": "string",
+            "sourceColumn": "仕入先名",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "仕入先名",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "担当者名",
+            "dataType": "string",
+            "sourceColumn": "担当者名",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "担当者名",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "部署",
+            "dataType": "string",
+            "sourceColumn": "部署",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "部署",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "郵便番号",
+            "dataType": "int64",
+            "sourceColumn": "郵便番号",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "郵便番号",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "トドウフケン",
+            "dataType": "string",
+            "sourceColumn": "トドウフケン",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "トドウフケン",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "都道府県",
+            "dataType": "string",
+            "sourceColumn": "都道府県",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "都道府県",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "住所1",
+            "dataType": "string",
+            "sourceColumn": "住所1",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "住所1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "住所2",
+            "dataType": "string",
+            "sourceColumn": "住所2",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "住所2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "電話番号",
+            "dataType": "string",
+            "sourceColumn": "電話番号",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "電話番号",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ファクシミリ",
+            "dataType": "string",
+            "sourceColumn": "ファクシミリ",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ファクシミリ",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ホームページ",
+            "dataType": "string",
+            "sourceColumn": "ホームページ",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ホームページ",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "shiiresaki",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "shohin",
+        "sourceLineageTag": "[dbo].[shohin]",
+        "columns": [
+          {
+            "name": "商品コード",
+            "dataType": "int64",
+            "sourceColumn": "商品コード",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "商品コード",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "フリガナ",
+            "dataType": "string",
+            "sourceColumn": "フリガナ",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "フリガナ",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "商品名",
+            "dataType": "string",
+            "sourceColumn": "商品名",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "商品名",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "仕入先コード",
+            "dataType": "int64",
+            "sourceColumn": "仕入先コード",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "仕入先コード",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "区分コード",
+            "dataType": "int64",
+            "sourceColumn": "区分コード",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "区分コード",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "梱包単位",
+            "dataType": "string",
+            "sourceColumn": "梱包単位",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "梱包単位",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "単価",
+            "dataType": "double",
+            "sourceColumn": "単価",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "単価",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          },
+          {
+            "name": "在庫",
+            "dataType": "int64",
+            "sourceColumn": "在庫",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "在庫",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "発注済",
+            "dataType": "int64",
+            "sourceColumn": "発注済",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "発注済",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "発注点",
+            "dataType": "int64",
+            "sourceColumn": "発注点",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "発注点",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "生産中止",
+            "dataType": "int64",
+            "sourceColumn": "生産中止",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "生産中止",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "shohin",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "shohinkubun",
+        "sourceLineageTag": "[dbo].[shohinkubun]",
+        "columns": [
+          {
+            "name": "区分コード",
+            "dataType": "int64",
+            "sourceColumn": "区分コード",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "区分コード",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "区分名",
+            "dataType": "string",
+            "sourceColumn": "区分名",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "区分名",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "説明",
+            "dataType": "string",
+            "sourceColumn": "説明",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "説明",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "図",
+            "dataType": "double",
+            "sourceColumn": "図",
+            "sourceProviderType": "float",
+            "sourceLineageTag": "図",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "shohinkubun",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "todofuken",
+        "sourceLineageTag": "[dbo].[todofuken]",
+        "columns": [
+          {
+            "name": "トドウフケン",
+            "dataType": "string",
+            "sourceColumn": "トドウフケン",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "トドウフケン",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "都道府県",
+            "dataType": "string",
+            "sourceColumn": "都道府県",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "都道府県",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ローマ字",
+            "dataType": "string",
+            "sourceColumn": "ローマ字",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ローマ字",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "地域名ローマ字",
+            "dataType": "string",
+            "sourceColumn": "地域名ローマ字",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "地域名ローマ字",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "地域",
+            "dataType": "string",
+            "sourceColumn": "地域",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "地域",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "todofuken",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "tokuisaki",
+        "sourceLineageTag": "[dbo].[tokuisaki]",
+        "columns": [
+          {
+            "name": "得意先コード",
+            "dataType": "int64",
+            "sourceColumn": "得意先コード",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "得意先コード",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "フリガナ",
+            "dataType": "string",
+            "sourceColumn": "フリガナ",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "フリガナ",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "得意先名",
+            "dataType": "string",
+            "sourceColumn": "得意先名",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "得意先名",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "担当者名",
+            "dataType": "string",
+            "sourceColumn": "担当者名",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "担当者名",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "部署",
+            "dataType": "string",
+            "sourceColumn": "部署",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "部署",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "郵便番号",
+            "dataType": "int64",
+            "sourceColumn": "郵便番号",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "郵便番号",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "トドウフケン",
+            "dataType": "string",
+            "sourceColumn": "トドウフケン",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "トドウフケン",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "都道府県",
+            "dataType": "string",
+            "sourceColumn": "都道府県",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "都道府県",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "住所1",
+            "dataType": "string",
+            "sourceColumn": "住所1",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "住所1",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "住所2",
+            "dataType": "string",
+            "sourceColumn": "住所2",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "住所2",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "電話番号",
+            "dataType": "string",
+            "sourceColumn": "電話番号",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "電話番号",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "ファクシミリ",
+            "dataType": "string",
+            "sourceColumn": "ファクシミリ",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "ファクシミリ",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "tokuisaki",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      },
+      {
+        "name": "unso",
+        "sourceLineageTag": "[dbo].[unso]",
+        "columns": [
+          {
+            "name": "運送コード",
+            "dataType": "int64",
+            "sourceColumn": "運送コード",
+            "formatString": "0",
+            "sourceProviderType": "int",
+            "sourceLineageTag": "運送コード",
+            "summarizeBy": "sum",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "運送会社",
+            "dataType": "string",
+            "sourceColumn": "運送会社",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "運送会社",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          },
+          {
+            "name": "電話番号",
+            "dataType": "string",
+            "sourceColumn": "電話番号",
+            "sourceProviderType": "varchar",
+            "sourceLineageTag": "電話番号",
+            "summarizeBy": "none",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "{{Partition_Name}}",
+            "mode": "directLake",
+            "source": {
+              "type": "entity",
+              "entityName": "unso",
+              "expressionSource": "DatabaseQuery",
+              "schemaName": "dbo"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "IsTableInBiModel",
+            "value": "False"
+          }
+        ]
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DatabaseQuery",
+        "kind": "m",
+        "expression": "let\n    database = {{TDS_Endpoint}}\nin\n    database\n"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "SourceLineageTagType",
+        "value": "DatabaseFullyQualifiedName"
+      }
+    ]
+  }
+}

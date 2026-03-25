@@ -1,0 +1,168 @@
+table shain
+	lineageTag: 2e44fe80-d74a-43af-9b5b-0758658e679b
+	sourceLineageTag: [dbo].[shain]
+
+	column 社員コード
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 0764a84a-0799-4433-ae64-c6c5c0970e25
+		sourceLineageTag: 社員コード
+		summarizeBy: none
+		sourceColumn: 社員コード
+
+		annotation SummarizationSetBy = Automatic
+
+	column フリガナ
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8aa179e7-5d4e-44ef-ade2-db13c5db8b1b
+		sourceLineageTag: フリガナ
+		summarizeBy: none
+		sourceColumn: フリガナ
+
+		annotation SummarizationSetBy = Automatic
+
+	column 氏名
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e37bdf47-3190-4aaf-8811-40179cf164b1
+		sourceLineageTag: 氏名
+		summarizeBy: none
+		sourceColumn: 氏名
+
+		annotation SummarizationSetBy = Automatic
+
+	column 在籍支社
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a3452be5-dc7e-49e2-9971-9f07400d9daa
+		sourceLineageTag: 在籍支社
+		summarizeBy: none
+		sourceColumn: 在籍支社
+
+		annotation SummarizationSetBy = Automatic
+
+	column 部署名
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 50948f60-6cef-44f3-b4a4-1a43094c0b39
+		sourceLineageTag: 部署名
+		summarizeBy: none
+		sourceColumn: 部署名
+
+		annotation SummarizationSetBy = Automatic
+
+	column 誕生日
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: e566ba87-afe5-4e09-8486-55b94c120e42
+		sourceLineageTag: 誕生日
+		summarizeBy: none
+		sourceColumn: 誕生日
+
+		annotation SummarizationSetBy = Automatic
+
+	column 入社日
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 8703ebf0-e939-4f36-a85f-02c117ab393d
+		sourceLineageTag: 入社日
+		summarizeBy: none
+		sourceColumn: 入社日
+
+		annotation SummarizationSetBy = Automatic
+
+	column 自宅郵便番号
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: fa568027-769a-4148-b3c3-eb89a36001a2
+		sourceLineageTag: 自宅郵便番号
+		summarizeBy: none
+		sourceColumn: 自宅郵便番号
+
+		annotation SummarizationSetBy = Automatic
+
+	column 自宅都道府県
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9ced916b-f5ee-4be2-b253-8727e2013fc2
+		sourceLineageTag: 自宅都道府県
+		summarizeBy: none
+		sourceColumn: 自宅都道府県
+
+		annotation SummarizationSetBy = Automatic
+
+	column 自宅住所1
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 119884da-3dfb-44e7-a603-cc38688e16f3
+		sourceLineageTag: 自宅住所1
+		summarizeBy: none
+		sourceColumn: 自宅住所1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 自宅住所2
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9291a3ef-7dce-4ee5-bcac-44a4f9fd8192
+		sourceLineageTag: 自宅住所2
+		summarizeBy: none
+		sourceColumn: 自宅住所2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 自宅電話番号
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0c3671d3-ea83-44a3-9af9-b3786cad344a
+		sourceLineageTag: 自宅電話番号
+		summarizeBy: none
+		sourceColumn: 自宅電話番号
+
+		annotation SummarizationSetBy = Automatic
+
+	column 内線
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 2bb336b9-d959-4aff-a9e5-a3105269596b
+		sourceLineageTag: 内線
+		summarizeBy: none
+		sourceColumn: 内線
+
+		annotation SummarizationSetBy = Automatic
+
+	column 写真
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c565b9bd-a31b-44f2-b6e7-551ef454a913
+		sourceLineageTag: 写真
+		summarizeBy: none
+		sourceColumn: 写真
+
+		annotation SummarizationSetBy = Automatic
+
+	column プロフィール
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ee546668-fc07-45c1-9a55-47802d70a678
+		sourceLineageTag: プロフィール
+		summarizeBy: none
+		sourceColumn: プロフィール
+
+		annotation SummarizationSetBy = Automatic
+
+	partition shain = entity
+		mode: directLake
+		source
+			entityName: shain
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

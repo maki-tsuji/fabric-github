@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/CosmosDB/definition/CosmosDB/2.0.0/schema.json",
+  "containers": [
+    {
+      "options": {
+        "autoscaleSettings": {
+          "maxThroughput": 5000
+        }
+      },
+      "resource": {
+        "id": "SampleVectorData",
+        "computedProperties": [],
+        "conflictResolutionPolicy": {
+          "mode": "LastWriterWins",
+          "conflictResolutionPath": "/_ts",
+          "conflictResolutionProcedure": ""
+        },
+        "geospatialConfig": {
+          "type": "Geography"
+        },
+        "indexingPolicy": {
+          "automatic": true,
+          "indexingMode": "Consistent",
+          "includedPaths": [
+            {
+              "path": "/*",
+              "indexes": []
+            }
+          ],
+          "excludedPaths": [
+            {
+              "path": "/\"_etag\"/?"
+            },
+            {
+              "path": "/vectors/*"
+            }
+          ],
+          "compositeIndexes": [],
+          "spatialIndexes": [],
+          "vectorIndexes": [
+            {
+              "quantizationByteSize": 64,
+              "path": "/vectors",
+              "type": "quantizedFlat",
+              "quantizerType": "product"
+            }
+          ],
+          "fullTextIndexes": []
+        },
+        "partitionKey": {
+          "paths": [
+            "/categoryName"
+          ],
+          "kind": "Hash",
+          "version": 2
+        },
+        "uniqueKeyPolicy": {
+          "uniqueKeys": []
+        },
+        "vectorEmbeddingPolicy": {
+          "vectorEmbeddings": [
+            {
+              "path": "/vectors",
+              "dataType": "float32",
+              "dimensions": 1536,
+              "distanceFunction": "cosine"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

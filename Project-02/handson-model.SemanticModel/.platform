@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "handson-model"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6a799281-1682-8d99-4c5a-8287bf69cdf8"
+  }
+}

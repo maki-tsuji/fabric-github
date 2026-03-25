@@ -1,0 +1,145 @@
+table shiiresaki
+	lineageTag: ba4aa123-ae60-4a22-9c9f-6962e7cf3b2a
+	sourceLineageTag: [dbo].[shiiresaki]
+
+	column 仕入先コード
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 206992eb-966c-4bc5-95d0-6deb84ee726f
+		sourceLineageTag: 仕入先コード
+		summarizeBy: none
+		sourceColumn: 仕入先コード
+
+		annotation SummarizationSetBy = Automatic
+
+	column フリガナ
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 43e75c97-3b6d-4e30-aceb-2b114c9e30d1
+		sourceLineageTag: フリガナ
+		summarizeBy: none
+		sourceColumn: フリガナ
+
+		annotation SummarizationSetBy = Automatic
+
+	column 仕入先名
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 55ed5f92-e878-4e61-bc2a-e343c0b54511
+		sourceLineageTag: 仕入先名
+		summarizeBy: none
+		sourceColumn: 仕入先名
+
+		annotation SummarizationSetBy = Automatic
+
+	column 担当者名
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 09f821ae-3c1a-4d23-9e1f-16d9c1a85a1a
+		sourceLineageTag: 担当者名
+		summarizeBy: none
+		sourceColumn: 担当者名
+
+		annotation SummarizationSetBy = Automatic
+
+	column 部署
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9a3345d5-11b4-4576-934b-2fc6045d968b
+		sourceLineageTag: 部署
+		summarizeBy: none
+		sourceColumn: 部署
+
+		annotation SummarizationSetBy = Automatic
+
+	column 郵便番号
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 5f69e933-aa5a-4478-b27c-2b8aa5970c64
+		sourceLineageTag: 郵便番号
+		summarizeBy: none
+		sourceColumn: 郵便番号
+
+		annotation SummarizationSetBy = Automatic
+
+	column トドウフケン
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ac8f7c5f-2802-44aa-b369-f3aa2db27039
+		sourceLineageTag: トドウフケン
+		summarizeBy: none
+		sourceColumn: トドウフケン
+
+		annotation SummarizationSetBy = Automatic
+
+	column 都道府県
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e9cb0b6c-cc56-46fa-917a-141ccbfd9bf7
+		sourceLineageTag: 都道府県
+		summarizeBy: none
+		sourceColumn: 都道府県
+
+		annotation SummarizationSetBy = Automatic
+
+	column 住所1
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 781cdafe-f5e6-4c2d-bde8-cd5f9b2d1be7
+		sourceLineageTag: 住所1
+		summarizeBy: none
+		sourceColumn: 住所1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 住所2
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2761aa49-f97c-4801-a86c-3ef916b02e52
+		sourceLineageTag: 住所2
+		summarizeBy: none
+		sourceColumn: 住所2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 電話番号
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3d128809-7004-44d5-8076-95876a9d3c18
+		sourceLineageTag: 電話番号
+		summarizeBy: none
+		sourceColumn: 電話番号
+
+		annotation SummarizationSetBy = Automatic
+
+	column ファクシミリ
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: fb1b9337-449c-4704-85bf-2e9a01a87766
+		sourceLineageTag: ファクシミリ
+		summarizeBy: none
+		sourceColumn: ファクシミリ
+
+		annotation SummarizationSetBy = Automatic
+
+	column ホームページ
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 50ded30d-e2f4-4424-8328-30318931dda9
+		sourceLineageTag: ホームページ
+		summarizeBy: none
+		sourceColumn: ホームページ
+
+		annotation SummarizationSetBy = Automatic
+
+	partition shiiresaki = entity
+		mode: directLake
+		source
+			entityName: shiiresaki
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

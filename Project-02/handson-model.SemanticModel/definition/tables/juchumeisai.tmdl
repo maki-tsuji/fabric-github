@@ -1,0 +1,82 @@
+table juchumeisai
+	lineageTag: 54e932ca-fa96-4839-b133-9edeed3cd9bb
+	sourceLineageTag: [dbo].[juchumeisai]
+
+	column 受注コード
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: e857fedb-482b-454b-8d2e-f24b6f066cc1
+		sourceLineageTag: 受注コード
+		summarizeBy: none
+		sourceColumn: 受注コード
+
+		annotation SummarizationSetBy = Automatic
+
+	column 商品コード
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 76ff95f5-851f-4516-a5d8-35560ad5d6cd
+		sourceLineageTag: 商品コード
+		summarizeBy: none
+		sourceColumn: 商品コード
+
+		annotation SummarizationSetBy = Automatic
+
+	column 単価
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 52a4936b-d43a-4d14-b595-5ce205a7c40c
+		sourceLineageTag: 単価
+		summarizeBy: sum
+		sourceColumn: 単価
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 数量
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 44ec2cf1-f3e1-4a48-b5e0-237940ff5298
+		sourceLineageTag: 数量
+		summarizeBy: sum
+		sourceColumn: 数量
+
+		annotation SummarizationSetBy = Automatic
+
+	column 割引
+		dataType: double
+		sourceProviderType: float
+		lineageTag: ff0e236c-5526-4a2f-a008-3b92324b9362
+		sourceLineageTag: 割引
+		summarizeBy: sum
+		sourceColumn: 割引
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 売上
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 8e2edcc5-f58f-41a7-b327-ae67afc30af6
+		sourceLineageTag: 売上
+		summarizeBy: sum
+		sourceColumn: 売上
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition juchumeisai = entity
+		mode: directLake
+		source
+			entityName: juchumeisai
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
